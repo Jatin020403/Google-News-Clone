@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel = "icon" href = 
+"./images/Google_News_icon.png" 
+        type = "image/x-icon">
+    <title>News</title>
+
+  </head>
+  <body onload="searchBarTopic()">
+    <!------------------ NAVBAR -------------------->
+
+    <div class="navbar-full">
+      <nav>
+        <i class="material-icons menu" onclick="callMenu()">menu</i>
+
+        <a href="./index.html"
+          ><img
+            class="GLogo"
+            src="./images/Google_2015_logo.svg.png"
+            alt="Google img"
+          />
+          <span>News</span>
+        </a>
+
+        <form action="" onsubmit="searchBarTopic()" class="search">
+          <button type="submit" class="submit">
+            <i class="material-icons">search</i>
+          </button>
+          <input type="text" class="input" value="Covid-19" />
+        </form>
+
+        <i class="material-icons app">apps</i>
+
+        <img src="./images/dp.jpg" class="dp" alt="" />
+      </nav>
+    </div>
+
+    <!------------------ SideBar ------------------>
+
+    <div class="nav-links" id="navlinks">
+      <ul>
+        <br />
+        <li onclick="sideBarLink(this)" value="news">Top stories</li>
+        <li onclick="sideBarLink(this)" value="news">For you</li>
+        <li onclick="sideBarLink(this)" value="news">Following</li>
+        <li onclick="sideBarLink(this)" value="news">News Showcase</li>
+        <li onclick="sideBarLink(this)" value="news">Saved searches</li>
+        <br />
+        <hr />
+        <br />
+
+        <li onclick="sideBarLink(this)" value="covid-19">COVID-19</li>
+
+        <br />
+        <hr />
+        <br />
+        <li onclick="sideBarLink(this)" value="india">India</li>
+        <li onclick="sideBarLink(this)" value="world">World</li>
+        <li onclick="sideBarLink(this)" value="local">Your local news</li>
+        <li onclick="sideBarLink(this)" value="business">Business</li>
+        <li onclick="sideBarLink(this)" value="technology">Technology</li>
+        <li onclick="sideBarLink(this)" value="entertainment">Entertainment</li>
+        <li onclick="sideBarLink(this)" value="sports">Sports</li>
+        <li onclick="sideBarLink(this)" value="science">Science</li>
+        <li onclick="sideBarLink(this)" value="health">Health</li>
+        <br />
+        <hr />
+      </ul>
+    </div>
+
+    <div class="container">
+      <h3 id="headline"></h3>
+      <ul class="news-list"></ul>
+    </div>
+    <br>
+    <br>
+    <h4 class="bar">Made with <span> &#9829 </span> by Jatin</h4>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
